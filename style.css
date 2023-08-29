@@ -1,0 +1,140 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+	
+}
+
+body{
+	background-color: #d161ff;
+}
+
+
+h1 {
+	color: orangered;
+	margin-bottom: -5px;
+	margin-top: 40px;
+}
+p {
+	margin-bottom: -10px;
+	margin-top: 30px;
+}
+.ui {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	
+}
+.row {
+	display: flex;
+}
+
+.cell:active{
+	outline : none;
+}
+.cell:hover{
+	
+	transform: scale(1.1);
+	box-shadow: inset 5px 5px 25px brown;
+	
+	text-align:center;
+	
+}
+
+
+/* 3*3 Grid */
+.cell{
+    background: #ffffff;
+    height: 14vmin;
+    width: 14vmin;
+    border: none;
+    border-radius: 8px;
+    font-size: 10vmin;
+    color: #d161ff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
+	text-align: center;
+	transition: all 1s linear;
+}
+/* Reset Button */
+#but {
+	box-sizing: border-box;
+	width: 95px;
+	height: 40px;
+	border: 1px solid dodgerblue;
+	margin-left: auto;
+	margin-bottom: 5px;
+	border-radius: 8px;
+	font-family: Verdana,
+		Geneva, Tahoma, sans-serif;
+
+	background-color: whitesmoke;
+	color: red;
+	font-size: 20px;
+	cursor: pointer;
+}
+#but:hover{
+	color: white;
+	background-color: red;
+	box-shadow: 5px 5px 10px red;
+}
+/* Player turn space */
+#print {
+	font-family: Verdana,
+		Geneva, Tahoma, sans-serif;
+	color:brown;
+	font-size: 30px;
+	margin-bottom: 10px;
+}
+
+/* Main Container */
+#main {
+	text-align: center;
+	width:100%;
+	height: 100%;
+	
+	background-color: beige;
+	
+	
+}
+
+/* Game Instruction Text */
+#ins {
+	font-family: Verdana,Geneva,
+					Tahoma, sans-serif;
+	color: dodgerblue;
+	
+}
+ 
+#last{
+	height: 30px;
+	background-color: beige;
+	margin-top: 30px;
+	
+}
+#foot{
+	
+	
+	height: 20px;
+	margin-top: 15px;
+	position: relative;
+	animation-name: move;
+	animation-duration: 5s;
+	animation-direction: alternate;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+@keyframes move{
+	from{
+          left: 12px;
+		  
+	}
+	to{
+          
+		  left:1200px;
+	} 
+}
+body{
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
